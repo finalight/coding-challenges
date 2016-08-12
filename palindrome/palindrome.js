@@ -1,7 +1,9 @@
 var Palindrome = function() {
-    this.check = function(str1) {
-        throw new Error('asd');
-        // return str1 == str1.split('').reverse().join('');
+    this.check = function(str) {
+    	if(str == undefined){
+    		throw new Error('undefined');
+    	}
+        return str == str.split('').reverse().join('');
     }
 }
 
